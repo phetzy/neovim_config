@@ -1,5 +1,4 @@
 require("fetzy")
-vim.cmd("colorscheme onedark_vivid")
 
 require("onedarkpro").setup({
   styles = {
@@ -18,3 +17,5 @@ require("onedarkpro").setup({
     virtual_text = "NONE",
   }
 })
+
+vim.cmd("colorscheme onedark_vivid")
