@@ -1,5 +1,3 @@
-require("fetzy.remap")
-
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
@@ -61,5 +59,7 @@ return require('packer').startup(function(use)
     }
 
     use {"ThePrimeagen/vim-be-good"}
+
+    use {"lukas-reineke/indent-blankline.nvim"}
 
 end)
