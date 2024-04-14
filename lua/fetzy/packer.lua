@@ -27,7 +27,6 @@ return require('packer').startup(function(use)
     use ('theprimeagen/harpoon')
     use ('mbbill/undotree')
     use ('tpope/vim-fugitive')
-    use ('tpope/vim-surround')
 
     use {
 	    'VonHeikemen/lsp-zero.nvim',
@@ -47,7 +46,8 @@ return require('packer').startup(function(use)
 		    {'hrsh7th/cmp-path'},
 		    {'saadparwaiz1/cmp_luasnip'},
 		    {'hrsh7th/cmp-nvim-lua'},
-		    {'rafamadriz/friendly-snippets'}
+		    {'rafamadriz/friendly-snippets'},
+            {'hrsh7th/cmp-cmdline'},
 	    }
     }
 
@@ -59,8 +59,12 @@ return require('packer').startup(function(use)
         end
     }
 
+    use {'windwp/nvim-ts-autotag'}
+
     use {"ThePrimeagen/vim-be-good"}
 
     use {"lukas-reineke/indent-blankline.nvim"}
+
+    use {'nvim-tree/nvim-tree.lua'}
 
 end)
