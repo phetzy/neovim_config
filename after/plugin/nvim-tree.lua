@@ -1,7 +1,19 @@
 vim.opt.termguicolors = true
 
-require("nvim-tree").setup()
-
+require("nvim-tree").setup {
+    update_focused_file = {
+        enable = true,
+        update_cwd = true,
+    },
+    renderer = {
+        highlight_opened_files = 'all',
+    },
+    view = {
+        number = false,
+        cursorline = true
+    }
+}
+    
 local api = require("nvim-tree.api")
 
 local function opts(desc)
@@ -17,4 +29,3 @@ vim.keymap.set('n', '<leader>tc', api.tree.collapse_all, opts('Collapse All'))
 vim.keymap.set('n', '<leader>tr', api.tree.reload, opts('Reload'))
 vim.keymap.set('n', '<leader><Up>', api.node.navigate.parent, opts('Parent Directory'))
 vim.keymap.set('n', '<leader><Down>', api.node.navigate.sibling.next, opts('Next Sibling'))
-
