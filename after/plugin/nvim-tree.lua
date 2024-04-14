@@ -4,10 +4,16 @@ require("nvim-tree").setup {
     update_focused_file = {
         enable = true,
         update_cwd = true,
-        autoresize = true
+    },
+    renderer = {
+        highlight_opened_files = 'all',
+    },
+    view = {
+        number = false,
+        cursorline = true
     }
 }
-
+    
 local api = require("nvim-tree.api")
 
 local function opts(desc)
