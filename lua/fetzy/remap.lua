@@ -8,10 +8,10 @@ vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 -- Exit insert mode when navigating with HJKL 
-vim.keymap.set('i', 'hh', 'n')
-vim.keymap.set('i', 'jj', 'n')
-vim.keymap.set('i', 'kk', 'n')
-vim.keymap.set('i', 'll', 'n')
+vim.keymap.set('i', 'hh', '<Esc>')
+vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('i', 'kk', '<Esc>')
+vim.keymap.set('i', 'll', '<Esc>')
 
 -- Moving between windows
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
