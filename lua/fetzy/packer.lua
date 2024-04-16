@@ -13,6 +13,8 @@ return require('packer').startup(function(use)
 	    requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    use ('nvim-telescope/telescope-ui-select.nvim')
+
     use ("olimorris/onedarkpro.nvim")
 
     use ("nvim-treesitter/nvim-treesitter", {run = ':TSUpdate'})
